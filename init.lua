@@ -17,7 +17,7 @@ local function load_blockwatch_data()
 end
 
 
-minetest.register_chatcommand("topluck", {
+minetest.register_chatcommand("checkuserluck", {
     description = "affiche le topluck",
     params = "<nom du joueur>",
     func = function(name, param)
@@ -271,7 +271,7 @@ local function calculateBlockStats(player_name)
 end
 
 -- Commande pour lister les joueurs avec pourcentage depuis le fichier JSON
-minetest.register_chatcommand("listplayers_with_percentage", {
+minetest.register_chatcommand("topluck", {
     description = "Affiche la liste des joueurs dans le fichier JSON avec pourcentage",
     func = function(name, param)
         -- Récupérer la liste des noms de joueurs avec pourcentage depuis le fichier JSON
